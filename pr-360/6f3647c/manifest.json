@@ -1,0 +1,46 @@
+{
+  "summary": "这个 PR 让 Grok 订阅能在网关里生图（Grok Imagine）和生视频（新增 /v1/videos 等接口，并给 MCP 加了一个 generate_video 工具）。界面上直接可见的改动只有资源库里 Magpie Image 的说明文字（中英各一句）：多了「也可以用 Grok 订阅生成短视频」；其余都是由数据驱动的模型列表变化。",
+  "scenes": [
+    {
+      "title": "资源库里 Magpie Image 的说明文字",
+      "shots": [
+        {
+          "file": "01-library-mcp-tab.png",
+          "caption": "「MCP 服务器」标签下的列表",
+          "width": 2560
+        },
+        {
+          "file": "02-library-magpie-image-card.png",
+          "caption": "「MCP 服务器」→「发现」里 Magpie Image 卡片的说明文字",
+          "width": 1120
+        },
+        {
+          "file": "03-magpie-image-detail.png",
+          "caption": "Magpie Image 的详情",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "生图模型的位置",
+      "shots": [
+        {
+          "file": "04-settings-images.png",
+          "caption": "设置 → 图像：生图模型一行",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [
+    "资源库里 Magpie Image 的说明文字 · click div.row.lib-row: nothing visible matches div.row.lib-row with \"Magpie Image\" (0 in the page)"
+  ],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "沙盒里只有一个 DeepSeek API Key，没有登录任何 Grok 订阅，所以看不到另一半改动：Grok 订阅只会让「设置 → 图像 → 生图模型」的「自动」显示成 Grok Imagine、让网关的模型列表里出现 grok-imagine-image/-quality 与 grok-imagine-video，且 Magpie Image 的 generate_video 工具只在 Agent 侧的 MCP 工具列表里出现，magpie 界面本身不展示工具清单。本计划仍给出这些位置。",
+  "interactive": true,
+  "pages": 3
+}

@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#360 界面预览 · 6f3647c</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#360 界面预览</h1><p class="m">commit 6f3647c · <a href="https://github.com/yetone/magpie/pull/360">回到 PR</a> · 这个 PR 让 Grok 订阅能在网关里生图（Grok Imagine）和生视频（新增 /v1/videos 等接口，并给 MCP 加了一个 generate_video 工具）。界面上直接可见的改动只有资源库里 Magpie Image 的说明文字（中英各一句）：多了「也可以用 Grok 订阅生成短视频」；其余都是由数据驱动的模型列表变化。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-library-mcp-tab.png" alt="「MCP 服务器」标签下的列表"><figcaption>资源库里 Magpie Image 的说明文字 · 「MCP 服务器」标签下的列表</figcaption></figure>
+<figure><img src="02-library-magpie-image-card.png" alt="「MCP 服务器」→「发现」里 Magpie Image 卡片的说明文字"><figcaption>资源库里 Magpie Image 的说明文字 · 「MCP 服务器」→「发现」里 Magpie Image 卡片的说明文字</figcaption></figure>
+<figure><img src="03-magpie-image-detail.png" alt="Magpie Image 的详情"><figcaption>资源库里 Magpie Image 的说明文字 · Magpie Image 的详情</figcaption></figure>
+<figure><img src="04-settings-images.png" alt="设置 → 图像：生图模型一行"><figcaption>生图模型的位置 · 设置 → 图像：生图模型一行</figcaption></figure>
+</main></html>

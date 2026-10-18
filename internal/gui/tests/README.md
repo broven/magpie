@@ -2470,3 +2470,15 @@ does. Both engines, at 440px. The reckoning itself is covered by
 `TestHistoricalWindowHoldsUsesEachWindowsOwnReading`,
 `TestWindowHoldsResetBeforeRefillReading` and
 `TestWindowHoldsDryAgainAfterReset`.
+
+`panel-balance-user.test.cjs` puts two balances under one provider
+(sub2api's accounts WaWa and YunDou, broven/magpie-sub2api#4) and DeepSeek's
+in the menu bar panel's Usage tab: each sub2api card names its account under
+the provider's logo and name, uncut, by the name the user gave it before the
+account itself, as an account's card does; the balance without a user is its
+provider's name alone. With Hide accounts on, the names on the cards are
+blurred. Every language, Chromium and WebKit.
+
+```sh
+node --test internal/gui/tests/panel-balance-user.test.cjs
+```

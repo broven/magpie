@@ -16727,6 +16727,8 @@ function panelBalances(bals) {
     const who = el("span", "pq-sub pq-bn");
     who.append(quotaRefresh(q), icon(q.icon || "generic"), el("span", "", q.name));
     card.append(who);
+    // which of the provider's accounts, as an account's card says
+    if (q.alias || q.user) card.append(el("span", "pq-user", q.alias || q.user));
     // a balance field with several amounts: the first as the figure,
     // the others each a quiet line, a percent a meter (#420); what the
     // vendor says it is made of, those lines too

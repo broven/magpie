@@ -6497,7 +6497,11 @@ function renderPanelQuota() {
       // whose balance, at a glance: the provider's logo before its name
       const who = el("span", "pq-sub pq-bn");
       who.append(icon(q.icon || "generic"), el("span", "", q.name));
-      card.append(who, el("b", "pq-amt", q.balance));
+      card.append(who);
+      // several accounts or keys under one provider: which one, under its
+      // name, as an account's card names its user
+      if (q.user) card.append(el("span", "pq-user", q.user));
+      card.append(el("b", "pq-amt", q.balance));
       grid.append(card);
     }
     g.append(grid);
